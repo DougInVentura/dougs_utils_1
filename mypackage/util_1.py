@@ -1,14 +1,14 @@
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, classification_report, balanced_accuracy_score, roc_auc_score, accuracy_score
-import random
+
 
 def calc_metrics(X_train, X_test, y_train, y_test, model, random_seed_num):
     '''
     Function calculates various metrics for classification models.
     This assumes the X train & X test are already scaled or coded.
     '''
-    random.seed(random_seed_num)
+    
     print("In calc_metrics, model class is: ",model.__class__)
     try:
         model.fit(X_train,y_train)
