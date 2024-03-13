@@ -4,7 +4,7 @@ setup(
     name="dougs_utils_1",
     version="0.1",
     packages=find_packages(),
-    install_requires=['sklearn','random','pandas'],
+    install_requires=['scikit-learn','random','pandas'],
     # general package to house functions I want to reuse.
     author="Doug Francis",
     author_email="douginventura@gmail.com",
